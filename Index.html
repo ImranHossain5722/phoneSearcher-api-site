@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Searcher </title>
+    <!-- bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- style Css -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+    <h1 class="text-center  fw-bold text-success p-4">  Phone Searcher </h1>
+<body class="body">
+    
+<main class="mainClass" >
+    <!-- search box section -->
+    <section class="container ">
+        <h5 class="text-center text-white pb-4 fw-bold"> Welcome our phone searcher website <h5> 
+        <div class=" mx-auto input-group mb-3 w-50">
+            <input id="input-id" type="text" class="form-control " placeholder="Type your phone Name" aria-label="Search"
+                aria-describedby="basic-addon2">
+                
+            <div class="input-group-append">
+                <button onclick="searchPhone()" class="input-group-text btn btn-success" id="search-btn">Search</button>
+            </div>     
+        </div>
+        <!-- error messages -->
+            <div class="mx-auto w-50">
+                <span class="text-danger fw-bold" id="error" ></span>
+
+           </div> 
+           <!-- spinner -->
+           <div id="spinner" >
+                <img src="image/loader_gif_1.gif" alt="">
+            </div> 
+    </section>
+
+    <!-- phone details -->
+    <section class=" conatainer">
+        <div class="row">
+            <div id="phoneDetails" class="d-flex justify-content-center p-4">
+            </div>
+        </div>
+        
+    </section>
+    <!-- Api  Phone Data load section -->
+    <section class="container">
+        <div class="row" id="parantDiv"  >
+         
+        </div> 
+    </section>
+    
+    
+                              
+
+      
+</main>
+
+
+
+    <!-- js script -->
+    <script src="js/app.js"></script>
+</body>
+</html>
